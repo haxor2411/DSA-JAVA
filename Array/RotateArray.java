@@ -10,11 +10,15 @@ public class RotateArray {
             arr[idx] = sc.nextInt();
         }
         int r = sc.nextInt();
-        reverseSubArray(arr, 0, r-2);//first part of the array
-        reverseSubArray(arr, r-1, n-1);//second part of the array 
+        r = r % n;
+        if(r < 0){
+            r = r + n;
+        }
+        reverseSubArray(arr, 0, n-r-1);//first part of the array
+        reverseSubArray(arr, n-r, n-1);//second part of the array 
         reverseSubArray(arr, 0, n-1); //whole array reversed
         for(int idx = 0; idx < n; idx++){
-            System.out.println(arr[idx]);
+            System.out.print(arr[idx]);
         }
     }
     public static void reverseSubArray(int[] arr, int strt_idx, int end_idx){
@@ -26,4 +30,4 @@ public class RotateArray {
             end_idx--;
         }
     }
-}
+} 
