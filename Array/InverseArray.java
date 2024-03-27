@@ -16,7 +16,7 @@ public class InverseArray {
             inverse[arr[idx]] = idx;
         }
         for(int idx = 0; idx < n; idx++){
-            System.out.println(inverse[idx]);
+            System.out.print(inverse[idx]);
         }
     }
 }
