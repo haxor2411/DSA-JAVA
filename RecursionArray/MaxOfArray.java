@@ -10,9 +10,9 @@ public class MaxOfArray {
         for(int idx = 0; idx < n; idx++){
             arr[idx] = sc.nextInt();
         }
-        System.out.println(maxOfArray(arr, 0));
+        System.out.println(maxOfArray(arr, 0/*, Integer.MIN_VALUE */));
     }
-    public static int maxOfArray(int arr[], int idx){
+    public static int maxOfArray(int arr[], int idx/*, int max */){
         // if(idx == arr.length){
         //     return max;
         // }
@@ -25,7 +25,7 @@ public class MaxOfArray {
 
         //OR
 
-        
+
         if(idx == arr.length){
             return Integer.MIN_VALUE;
         }
