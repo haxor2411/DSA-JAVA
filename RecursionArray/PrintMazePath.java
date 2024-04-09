@@ -27,7 +27,7 @@ public class PrintMazePath {
         //OR
 
         
-        printMazePath(sr, sc + 1, dr, dc, 'h' + asf);
-        printMazePath(sr + 1, sc, dr, dc, 'v' + asf);
+        printMazePath(sr, sc + 1, dr, dc, asf + 'h');
+        printMazePath(sr + 1, sc, dr, dc, asf + 'v');
     }
 }
