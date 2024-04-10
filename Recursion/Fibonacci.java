@@ -16,6 +16,9 @@ public class Fibonacci {
         if(n == 2){
             return 1;
         }
-        return fibonacci(n - 1) + fibonacci(n - 2);
+        int fib1 = fibonacci(n - 1);
+        int fib2 = fibonacci(n - 2);
+        int fibNum = fib1 + fib2;
+        return fibNum;
     }
 }

@@ -3,6 +3,7 @@ package Array;
 import java.util.*;
 
 public class barchart {
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
         //input and max element
         Scanner sc = new Scanner(System.in);
