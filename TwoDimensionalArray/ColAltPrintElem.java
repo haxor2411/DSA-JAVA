@@ -2,7 +2,7 @@ package TwoDimensionalArray;
 
 import java.util.Scanner;
 
-public class ColAltPrintElem  {
+public class ColAltPrintElem {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int nrows = sc.nextInt();
