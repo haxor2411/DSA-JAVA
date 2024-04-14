@@ -1,9 +1,9 @@
-package RecursionLVL2;
+package RecursionLVL2.ObjectChooses;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Combination1 {
+public class Combination {
     public static void main(String[] args) throws Exception{
         BufferedReader br =new BufferedReader(new InputStreamReader(System.in));
         int no_of_boxes = Integer.parseInt(br.readLine());
