@@ -19,8 +19,8 @@ public class Combination1 {
             return;
         }
         for(int bidx = last_box_idx + 1; bidx < boxes.length; bidx++){
-            if(boxes[bidx] == 0){
-                boxes[bidx] = 1;
+            if(boxes[bidx] == 0){ // empty box
+                boxes[bidx] = 1; // object placed
                 printCombination(boxes, current_object + 1, no_of_objects, bidx);
                 boxes[bidx] = 0; // backtracking
             }
