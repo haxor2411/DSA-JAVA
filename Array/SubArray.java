@@ -16,5 +16,15 @@ public class SubArray {
                 System.out.println();
             }
         }
+        // for finding subarray for fix size
+        // int subarray_size = sc. nextInt();
+        // for(int i = 0; i < n; i++){
+        //     if(i + subarray_size  <= n){
+        //         for(int j = i; j < i + subarray_size; j++){
+        //             System.out.print(arr[j] + "\t");
+        //         }
+        //         System.out.println();
+        //     }
+        // }
     }
 }
