@@ -22,6 +22,6 @@ public class bitStuffing {
     }
 
     public static void main(String[] args) {
-        System.out.println(BitStuffing("1111111"));
+        System.out.println(BitStuffing("11111111111111"));
     }
 }
