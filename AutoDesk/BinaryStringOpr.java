@@ -23,12 +23,9 @@ public class BinaryStringOpr{
             }
         }
         System.out.println(arr);
-        // System.out.println(countFunc(binaryString, 5));
-        // System.out.println(flipFunc(binaryString));
     }
 
     public static int countFunc(String binaryString, int indx){
-        //ArrayList<Integer> freq = new ArrayList<>();
         int count = 0;
         if(indx >=0 && indx < binaryString.length()){
             for(int idx = 0; idx < indx + 1; idx++){
