@@ -2,7 +2,7 @@ package RecursionLVL2;
 
 import java.util.Scanner;
 
-public class largestNoatMostKswaps {
+public class largestNumAtMostKswaps {
     static String max;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
