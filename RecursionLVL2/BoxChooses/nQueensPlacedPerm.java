@@ -11,6 +11,13 @@ public class nQueensPlacedPerm {
         printQueensPos(queens, n, 0, 0, 0, "");
     }
     public static void printQueensPos(boolean[] queens, int totalQueens, int QueenPlaced, int row, int col, String Pos){
+        if(row == totalQueens){
+            if(QueenPlaced == totalQueens){
+                System.out.println(Pos);
+                System.out.println();
+            }
+            return;
+        }
         int nr, nc;
         String seperator = "";
         if(col < totalQueens - 1){
@@ -22,13 +29,6 @@ public class nQueensPlacedPerm {
             nr = row + 1; 
             nc = 0;
             seperator = "\n";
-        }
-        if(nr == totalQueens){
-            if(QueenPlaced == totalQueens){
-                System.out.println(Pos);
-                System.out.println();
-            }
-            return;
         }
         for(int idx = 0; idx < totalQueens; idx++){
             if(queens[idx] == false){
