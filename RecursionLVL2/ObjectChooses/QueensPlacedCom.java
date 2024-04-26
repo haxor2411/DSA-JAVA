@@ -3,7 +3,7 @@ package RecursionLVL2.ObjectChooses;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class nQueensPlacedCom {
+public class QueensPlacedCom {
     public static void main(String[] args) throws Exception{
         BufferedReader br  = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
