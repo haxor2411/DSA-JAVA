@@ -38,7 +38,7 @@ public class ClimbStairs {
                 dp[i] = 1;
             }
             else if(i == 1){
-                dp[i] += dp[i - 1];
+                dp[i] = dp[i - 1];
             }
             else if(i == 2){
                 dp[i] = dp[i - 1] + dp[i - 2];
