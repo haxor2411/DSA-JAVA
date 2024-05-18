@@ -35,4 +35,4 @@ public class CRCalgo {
 
         System.out.println("CRC: " + Integer.toHexString(crc));
     }
-}
+}   
