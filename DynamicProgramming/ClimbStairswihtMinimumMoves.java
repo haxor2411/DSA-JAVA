@@ -14,15 +14,23 @@ public class ClimbStairswihtMinimumMoves {
     }
 
     public static int climbStairswihtMinimumMoves(int n, int[] moves){
-        int[] dp = new int[n + 1];
-        dp[n] = 0;
-        for(int idx = n - 1; idx >= 0; idx--){
-            if(moves[idx] > 0){
+        int dp[] = new int[n + 1];
+        for(int i = n;i >= 0; i--){
+            if(i == n){
+                dp[i] = 0;
+            }
+            else{
                 int min_move = Integer.MAX_VALUE;
-                for(int len = 1; len <= moves[idx] && len + idx <= n; len++){
-                    min_move = Math.min(min_move, dp[len + idx] + 1);
+                int maxJump = moves[i];
+                for(int jmp = 1; jmp <= maxJump && jmp + i <= n; jmp++){
+                    min_move = Math.min(min_move, dp[i + jmp]);
                 }
-                dp[idx] = min_move;
+                if(min_move == Integer.MAX_VALUE){
+                    dp[i] = min_move;
+                }
+                else{
+                    dp[i] = min_move + 1;
+                }
             }
         }
         return dp[0];
