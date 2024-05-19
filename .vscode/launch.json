@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MinCostTraversal",
+            "request": "launch",
+            "mainClass": "DynamicProgramming.MinCostTraversal",
+            "projectName": "DSA JAVA_7c121ecc"
+        },
+        {
+            "type": "java",
             "name": "jdbc",
             "request": "launch",
             "mainClass": "JDBC.jdbc",
