@@ -7,7 +7,7 @@ public class MinCostTraversal {
         System.out.println(minCostTraversal(n, m, matrix));
     }
     public static int minCostTraversal(int n, int m, int[][] matrix){
-        int dp[][] = new int[n + 1][m + 1];
+        int dp[][] = new int[n][m];
         int nr = matrix.length;
         int nc = matrix[0].length;
         for(int r = nr - 1; r >= 0; r--){
