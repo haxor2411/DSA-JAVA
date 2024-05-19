@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "jdbc",
+            "request": "launch",
+            "mainClass": "JDBC.jdbc",
+            "projectName": "DSA JAVA_7c121ecc"
+        },
+        {
+            "type": "java",
+            "name": "x",
+            "request": "launch",
+            "mainClass": "x",
+            "projectName": "DSA JAVA_7c121ecc"
+        },
+        {
+            "type": "java",
             "name": "IpAddressOfsystem",
             "request": "launch",
             "mainClass": "AlgoComputerNetworks.IpAddressOfsystem",
