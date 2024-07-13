@@ -4,6 +4,11 @@
         "."
     ],
     "java.project.referencedLibraries": [
-        "c:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\lib\\mysql-connector-j-8.1.0.jar"
-    ]
+        "C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\lib\\mysql-connector-j-8.3.0.jar"
+    ],
+    "cSpell.words": [
+        "cwhile",
+        "nums"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }

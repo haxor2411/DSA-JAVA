@@ -48,5 +48,5 @@ public class BinaryStringOpr{
             }
         }
         return new String(arr);
-    }    
+    }
 }

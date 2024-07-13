@@ -6,6 +6,115 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ReverseDataRecursive",
+            "request": "launch",
+            "mainClass": "ReverseDataRecursive"
+        },
+        {
+            "type": "java",
+            "name": "ReverseDataIterative",
+            "request": "launch",
+            "mainClass": "ReverseDataIterative"
+        },
+        {
+            "type": "java",
+            "name": "Basic",
+            "request": "launch",
+            "mainClass": "Basic"
+        },
+        {
+            "type": "java",
+            "name": "SubArray",
+            "request": "launch",
+            "mainClass": "Array.SubArray"
+        },
+        {
+            "type": "java",
+            "name": "SubSet",
+            "request": "launch",
+            "mainClass": "Array.SubSet"
+        },
+        {
+            "type": "java",
+            "name": "Swap",
+            "request": "launch",
+            "mainClass": "Swap"
+        },
+        {
+            "type": "java",
+            "name": "FindUniqueElem",
+            "request": "launch",
+            "mainClass": "FindUniqueElem"
+        },
+        {
+            "type": "java",
+            "name": "FinndUniqueElem",
+            "request": "launch",
+            "mainClass": "FinndUniqueElem"
+        },
+        {
+            "type": "java",
+            "name": "IbitsSet",
+            "request": "launch",
+            "mainClass": "IbitsSet"
+        },
+        {
+            "type": "java",
+            "name": "SetBits",
+            "request": "launch",
+            "mainClass": "SetBits"
+        },
+        {
+            "type": "java",
+            "name": "CountSetbits",
+            "request": "launch",
+            "mainClass": "CountSetbits"
+        },
+        {
+            "type": "java",
+            "name": "checkBit",
+            "request": "launch",
+            "mainClass": "checkBit"
+        },
+        {
+            "type": "java",
+            "name": "evenodd",
+            "request": "launch",
+            "mainClass": "evenodd"
+        },
+        {
+            "type": "java",
+            "name": "prime",
+            "request": "launch",
+            "mainClass": "Numerical.prime"
+        },
+        {
+            "type": "java",
+            "name": "Q26",
+            "request": "launch",
+            "mainClass": "Q26"
+        },
+        {
+            "type": "java",
+            "name": "x",
+            "request": "launch",
+            "mainClass": "x"
+        },
+        {
+            "type": "java",
+            "name": "BinaryStringOpr",
+            "request": "launch",
+            "mainClass": "AutoDesk.BinaryStringOpr"
+        },
+        {
+            "type": "java",
+            "name": "MineMaxGold",
+            "request": "launch",
+            "mainClass": "DynamicProgramming.MineMaxGold",
+            "projectName": "DSA JAVA_7c121ecc"
+        },
+        {
+            "type": "java",
             "name": "MinCostTraversal",
             "request": "launch",
             "mainClass": "DynamicProgramming.MinCostTraversal",
