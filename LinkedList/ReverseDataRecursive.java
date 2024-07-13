@@ -26,6 +26,24 @@ public class ReverseDataRecursive {
                 tmp = tmp.next;
             }
         }
+        static Node leftRev;
+        void reverseDR(){
+            leftRev = head;
+            reverseDRHelper(head, 0);
+        }
+        void reverseDRHelper(Node node, int idx){
+            if(node == null){
+                return;
+            }
+            reverseDRHelper(node.next, idx + 1);
+            if(idx >= size/2){
+                Node right = node; 
+                int tmp = right.data;
+                right.data = leftRev.data;
+                leftRev.data = tmp;
+                leftRev = leftRev.next;
+            }
+        }
     }
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
@@ -34,6 +52,8 @@ public class ReverseDataRecursive {
         list.add(30);
         list.add(40);
         list.add(50);
+        list.add(60);
+        list.reverseDR();
         list.display();
     }
 }
