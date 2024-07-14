@@ -6,7 +6,7 @@ public class prime{
         long startTime = System.currentTimeMillis();
         //Scanner sc = new Scanner(System.in);
         boolean flag = true;
-        long num = 59;
+        long num = 1;
         for(long i = 2;i*i<=num;i++){
             if(num % i ==0){
                 flag = false;
