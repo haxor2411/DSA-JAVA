@@ -1,3 +1,4 @@
+package CRT.BitManipulation;
 //Find the unique element if every element is repeated 2 times except one elem
 public class FindUniqueElem {
     public static void main(String[] args) {

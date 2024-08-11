@@ -19,6 +19,8 @@ public class GenericTree{
     public static Node construct(int[] input){
         Stack<Node> st = new Stack<>();
         Node root = new Node(input[0]);
+
+        
         st.push(root);
         for(int i = 1; i < input.length; i++){
             if(input[i] == -1){

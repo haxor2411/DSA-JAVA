@@ -1,3 +1,4 @@
+package CRT.BitManipulation;
 //Generate a number with i bits set followed by j bit unset.
 public class IbitsSet {
     public static void main(String[] args) {

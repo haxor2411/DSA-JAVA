@@ -1,3 +1,4 @@
+package LinkedList;
 public class Basic {
     public static class Node{
         int data;

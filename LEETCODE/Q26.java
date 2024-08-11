@@ -1,3 +1,4 @@
+package LEETCODE;
 public class Q26 {
     public static int removeDuplicates(int[] nums) {
         if(nums.length == 0){

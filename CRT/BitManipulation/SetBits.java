@@ -1,4 +1,4 @@
-
+package CRT.BitManipulation;
 //Generate a number where ith and jth bits are set.
 public class SetBits {
     public static void main(String[] args) {

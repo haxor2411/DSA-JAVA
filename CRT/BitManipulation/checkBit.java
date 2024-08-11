@@ -1,4 +1,4 @@
-
+package CRT.BitManipulation;
 public class checkBit {
     public static void main(String[] args) {
         int x = 10;

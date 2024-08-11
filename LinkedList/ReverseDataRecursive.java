@@ -1,3 +1,4 @@
+package LinkedList;
 public class ReverseDataRecursive {
     public static class Node{
         int data;

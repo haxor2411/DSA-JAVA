@@ -1,3 +1,4 @@
+package CRT.BitManipulation;
 public class evenodd {
     public static void main(String[] args) {
         int x = 45;
