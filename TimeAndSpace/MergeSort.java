@@ -12,6 +12,8 @@ public class MergeSort {
         System.out.println(Arrays.toString(arr));
     }
 
+    //1st Method
+    
     static int[] mergeSort(int[] arr, int low, int high){
         if(low == high) return new int[]{arr[low]};
         int mid = (low + high) / 2;
