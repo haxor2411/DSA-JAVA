@@ -20,7 +20,7 @@ T(n) = T(n - 1) + T(n - 2) + (1)(constant time);   T(n) => time taken to calcula
 T(n) = T(n - 1) + T(n - 2) < T(n - 1) + T(n - 1) + 1;
 T(n) < 2T(n - 1) + 1;
 2 . T(n - 1) = 4 . T(n - 2) + 2;
-.
+4 . T(n - 2) = 8 . T(n - 3) + 4;
 .
 .
 .
