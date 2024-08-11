@@ -6,7 +6,9 @@ public class DuplicateBrackets {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String exp = sc.nextLine();
-        System.out.println(isDuplicate(exp));;
+        System.out.println(isDuplicate(exp));
+        sc.close();
+
     }
 
     public static boolean isDuplicate(String expr){

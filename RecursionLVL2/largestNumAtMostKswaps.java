@@ -9,6 +9,8 @@ public class largestNumAtMostKswaps {
         String str = sc.next();
         max = str;
         int n = sc.nextInt();
+        sc.close();
+
         findMaximum(str, n);
         System.out.println(max);
     }

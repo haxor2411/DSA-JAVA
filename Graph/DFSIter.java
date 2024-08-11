@@ -58,5 +58,7 @@ public class DFSIter {
         }
         int src = sc.nextInt();
         dfsIter(graph, src);
+
+        sc.close();
     }
 }

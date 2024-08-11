@@ -9,6 +9,8 @@ public class LexographicalNumbers {
         for(int i = 1; i <= 9; i++){
             solve(i, n);
         }
+        sc.close();
+
     }
     public static void solve(int num, int n){
         if(num > n){

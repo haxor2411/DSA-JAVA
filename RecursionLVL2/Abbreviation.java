@@ -7,6 +7,8 @@ public class Abbreviation {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         solution(str, "", 0, 0);
+        sc.close();
+
     }
     public static void solution(String str, String ans, int count, int pos){
         if(pos == str.length()){
