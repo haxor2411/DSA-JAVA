@@ -6,8 +6,8 @@ public class Sort012 {
     public static void main(String[] args) {
         int[] arr = {1,0,1,1,0,2,1,0,0,0,1,1,1,2,2,2,0,0,1,0,1,0,1,2,2,1,1,0,0};
         System.out.println(arr.length);
-        // sort1(arr);
-        sort2(arr);
+        // sort1(arr); O(2N)
+        sort2(arr); //O(N)
         System.out.println(Arrays.toString(arr));
     }
 
