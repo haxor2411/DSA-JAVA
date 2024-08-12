@@ -11,6 +11,7 @@ public class ClimbStairswithVariableJumps {
             moves[idx] = sc.nextInt();
         }
         System.out.println(climbStairs_VarJumps(n, moves));
+        sc.close();
     }
 
     public static int climbStairs_VarJumps(int n, int[] moves){

@@ -11,6 +11,7 @@ public class ClimbStairswihtMinimumMoves {
             moves[idx] = sc.nextInt();
         }
         System.out.println(climbStairswihtMinimumMoves(n, moves));
+        sc.close();
     }
 
     public static int climbStairswihtMinimumMoves(int n, int[] moves){

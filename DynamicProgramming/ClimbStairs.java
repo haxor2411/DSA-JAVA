@@ -8,6 +8,7 @@ public class ClimbStairs {
         int n = sc.nextInt();
         System.out.println(climbStairs(n, new int[n + 1]));
         System.out.println(climbStairsTabulation(n));
+        sc.close();
     }
     //Memorisation
     public static int climbStairs(int n, int dp[]){
