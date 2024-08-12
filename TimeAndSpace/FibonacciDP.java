@@ -1,6 +1,6 @@
 package TimeAndSpace;
 
-// import java.util.Arrays;
+import java.util.Arrays;
 
 public class FibonacciDP {
     public static void main(String[] args) {
@@ -12,6 +12,7 @@ public class FibonacciDP {
     }
 
     //Memorisation
+    //Algo starts by asking difficult question
     static int fibonacciM(int n, int[] dp){
         if(n == 0 || n == 1) return dp[n] = n;
         if(dp[n] != 0) return dp[n];
@@ -19,13 +20,14 @@ public class FibonacciDP {
     }
 
     //Tabulation
+    //Algo starts with asking easiest question
     static int fibonacciT(int n){
         int[] dp = new int[n + 1];
-        dp[0] = 0;
-        dp[1] = 1;
-        for(int i = 2; i <= n; i++){
-            dp[i] += dp[i - 1] + dp[i - 2];
+        for(int i = 0; i <= n; i++){
+            if(i == 0 || i == 1) dp[i] = i;
+            else dp[i] = dp[i - 1] + dp[i - 2];
         }
+        System.out.println(Arrays.toString(dp));
         return dp[n];
     }
 }
