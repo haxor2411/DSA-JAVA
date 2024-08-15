@@ -1,7 +1,5 @@
 package DynamicProgramming;
 
-
-
 public class UnboundedKnapSack {
     public static void main(String[] args) {
         int n = 5;
