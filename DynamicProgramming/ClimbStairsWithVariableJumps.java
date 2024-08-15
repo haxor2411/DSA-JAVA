@@ -1,5 +1,7 @@
 package DynamicProgramming;
 
+import java.util.Arrays;
+
 public class ClimbStairsWithVariableJumps {
     public static void main(String[] args) {
         int[] arr = {3,3,0,2,1,2,4,2,0,0};
@@ -17,6 +19,7 @@ public class ClimbStairsWithVariableJumps {
             else if(arr[i] == 0) continue;
             else for(int j = 1; j <= arr[i] && i + j <= n; j++) dp[i] += dp[i + j];
             }   
+        System.out.println(Arrays.toString(dp));
         return dp[0];
     }
 
