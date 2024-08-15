@@ -16,6 +16,6 @@ public class CoinChangePermutation {
             for(int j : arr) if(j <= i) dp[i] += dp[i - j];
         }
         System.out.println(Arrays.toString(dp));
-        //ans at dp[target + 1]
+        //ans at dp[target]
     }
 }
