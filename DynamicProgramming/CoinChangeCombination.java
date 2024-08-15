@@ -2,14 +2,14 @@ package DynamicProgramming;
 
 import java.util.Arrays;
 
-public class CoinChangePermutation {
+public class CoinChangeCombination {
     public static void main(String[] args) {
         int[] arr = {2,3,5,6};
         int target = 7;
-        changePerm(arr, target);
+        changeComb(arr, target);
     }
 
-    static void changePerm(int[] arr, int target){
+    static void changeComb(int[] arr, int target){
         int[] dp = new int[target + 1];
         dp[0] = 1;
         for(int i : arr){
