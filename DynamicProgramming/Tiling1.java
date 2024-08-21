@@ -21,6 +21,7 @@ public class Tiling1 {
     }
 
     static int nWays2(int n){
+        if(n == 0) return 1;
         int f = 1, s = 2;
         for(int i = 3; i <= n; i++){
             int t = f + s;
