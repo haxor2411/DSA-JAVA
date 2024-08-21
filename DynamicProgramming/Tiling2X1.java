@@ -1,6 +1,6 @@
 package DynamicProgramming;
 
-public class Tiling1 {
+public class Tiling2X1 {
     public static void main(String[] args) {
         int n = 8;
         System.out.println(nWays(n));
