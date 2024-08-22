@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ClimbStairsWithVariableJumps {
     public static void main(String[] args) {
-        int[] arr = {3,3,0,2,1,2,4,2,0,0};
+        int[] arr = {3,3,0,2,1,2,10,2,0,0};
         int n = arr.length;
         System.out.println(climbStairsWithVariableJumps(n, arr));        
         System.out.println(climbStairsWithVariableJumpsTO(n, arr));
@@ -30,7 +30,7 @@ public class ClimbStairsWithVariableJumps {
             int tWays = 0;
             if(arr[i] == 0) continue;
             else{
-                for(int j = 1; j <= arr[i]; j++) tWays += (i + j == n) ? 1 : arr[i + j];
+                for(int j = 1; j <= arr[i] && i + j <= n; j++) tWays += (i + j == n) ? 1 : arr[i + j];
             }
             arr[i] = tWays;
         }
