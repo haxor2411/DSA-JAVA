@@ -1,5 +1,5 @@
 package DynamicProgramming;
-
+//OTA - one transaction allowed
 public class BuyandSellStocksOTA {
     public static void main(String[] args) {
         int days = 9;
