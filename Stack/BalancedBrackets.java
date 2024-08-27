@@ -33,6 +33,7 @@ public class BalancedBrackets {
         return stack.isEmpty() && nOB == nCB;
     }
 
+    // Better approach
     static boolean isBalanced2(String s){
         Stack<Character> stack = new Stack<>();
         for(char c : s.toCharArray()){
