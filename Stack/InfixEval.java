@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class InfixEval {
     public static void main(String[] args) {
-        String s = "2+6*4/8-3";
+        String s = "5*(4+2)-6/6";
         System.out.println(eval(s));
     }
 
@@ -31,9 +31,14 @@ public class InfixEval {
         Stack<Character> operator = new Stack<>();
 
         for (char ch : s.toCharArray()) {
-            if (ch == '*' || ch == '/' || ch == '+' || ch == '-') {
-                while(!operator.isEmpty() && precedence(ch) <= precedence(operator.peek())) evaluation(operand, operator);
+            if(ch == '(') operator.push(ch);
+            else if(ch == '*' || ch == '/' || ch == '+' || ch == '-') {
+                while(!operator.isEmpty() && operator.peek() != '(' && precedence(ch) <= precedence(operator.peek())) evaluation(operand, operator);
                 operator.push(ch);
+            }
+            else if(ch == ')'){
+                while(operator.peek() != '(') evaluation(operand, operator);
+                operator.pop();
             } 
             else operand.push(Integer.parseInt(ch + ""));
         }
