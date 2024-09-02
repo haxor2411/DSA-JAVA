@@ -17,6 +17,10 @@ public class QueuetoStackAdapterPE {
         void push(int val){this.mainQ.add(val);};
 
         int pop(){
+            if(mainQ.isEmpty()){
+                System.out.print("Stack is Empty ");
+                return -1;
+            }
             while(this.mainQ.size() != 1) this.HelperQ.add(this.mainQ.remove());
             int val = this.mainQ.remove();
 
@@ -54,6 +58,7 @@ public class QueuetoStackAdapterPE {
         System.out.println(stack.top());
         System.out.println(stack.size());
 
+        System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
