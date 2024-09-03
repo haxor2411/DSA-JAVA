@@ -65,7 +65,7 @@ public class RemoveElement {
             if(this.size() == 1) this.head = this.tail = null;
             else{
                 Node tmp = this.head;
-                while(tmp.next.next != null) tmp = tmp.next;
+                while(tmp.next != this.tail) tmp = tmp.next;
                 tmp.next = null;
                 this.tail = tmp;
             }
