@@ -39,6 +39,24 @@ public class AddElement {
             this.size++;
         }
 
+        void addAt(int idx, int val){
+            if(idx < 0 || idx >= this.size()) return;
+            if(idx == 0) addFirst(val);
+            else if(idx == this.size() - 1) addLast(val);
+            else{
+                Node node = new Node(val);
+                
+                Node tmp = this.head;
+                for(int i = 0; i < idx - 1; i++) tmp = tmp.next;
+
+                Node tmpAddr = tmp.next;
+                tmp.next = node;
+                node.next = tmpAddr;
+                this.size++;
+            }
+
+        }
+
         void display(){
             if(this.head == null){
                 System.out.println("Empty");
@@ -69,6 +87,13 @@ public class AddElement {
         list.addFirst(70);
         list.addFirst(60);
 
+        list.display();
+        
+        list.addAt(0, 55);
+        list.display();
+        list.addAt(list.size() - 1, 65);
+        list.display();
+        list.addAt(5, 75);
         list.display();
     }
 }
