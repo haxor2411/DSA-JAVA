@@ -47,13 +47,28 @@ public class RemoveElement {
                 System.out.println("Empty");
                 return;
             }
-            if(this.size() == 1) head = tail = null;
+            if(this.size() == 1) this.head = this.tail = null;
             else{
                 Node tmp = this.head.next;
                 this.head.next = null;
                 this.head = tmp;       
             }
 
+            this.size--;
+        }
+
+        void removeLast(){
+            if(this.size() == 0){
+                System.out.println("Empty");
+                return;
+            }
+            if(this.size() == 1) this.head = this.tail = null;
+            else{
+                Node tmp = this.head;
+                while(tmp.next.next != null) tmp = tmp.next;
+                tmp.next = null;
+                this.tail = tmp;
+            }
             this.size--;
         }
     }
@@ -81,5 +96,24 @@ public class RemoveElement {
         list.removeFirst();
 
         list.display();
+
+        list.addLast(100);
+        list.addLast(200);
+        list.addLast(300);
+        list.addLast(400);
+        list.addLast(500);
+
+        list.removeLast();
+        list.removeLast();
+        list.display();
+
+        list.removeLast();
+        list.display();
+        
+        System.out.println(list.size());
+        
+        list.removeLast();
+        list.removeLast();
+        list.removeLast();
     }    
 }
