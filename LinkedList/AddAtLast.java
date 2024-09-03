@@ -15,10 +15,12 @@ public class AddAtLast {
         Node head, tail;
         int size;
 
+        int size(){return this.size;}
+
         void addLast(int val){
             Node node = new Node(val);
 
-            if(this.head == null) this.head = this.tail = node;
+            if(this.size() == 0) this.head = this.tail = node;
             else{
                 this.tail.next = node;
                 this.tail = node;
