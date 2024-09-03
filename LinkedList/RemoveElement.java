@@ -1,6 +1,6 @@
 package LinkedList;
 
-public class AddAtLast {
+public class RemoveElement {
     public static class Node{
         int data;
         Node next;
@@ -30,7 +30,7 @@ public class AddAtLast {
         }
 
         void display(){
-            if(this.head == null){
+            if(this.size() == 0){
                 System.out.println("Empty");
                 return;
             }
@@ -41,8 +41,22 @@ public class AddAtLast {
             }
             System.out.println();
         }
-    }
 
+        void removeFirst(){
+            if(this.size() == 0){
+                System.out.println("Empty");
+                return;
+            }
+            if(this.size() == 1) head = tail = null;
+            else{
+                Node tmp = this.head.next;
+                this.head.next = null;
+                this.head = tmp;       
+            }
+
+            this.size--;
+        }
+    }
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
 
@@ -53,5 +67,19 @@ public class AddAtLast {
         list.addLast(50);
 
         list.display();
-    }
+        System.out.println(list.size());
+        
+        list.removeFirst();
+        list.removeFirst();
+        list.removeFirst();
+        
+        System.out.println(list.size());
+        list.display();
+        
+        list.removeFirst();
+        list.removeFirst();
+        list.removeFirst();
+
+        list.display();
+    }    
 }

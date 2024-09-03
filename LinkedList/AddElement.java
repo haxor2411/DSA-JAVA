@@ -1,6 +1,6 @@
 package LinkedList;
 
-public class RemoveFirst {
+public class AddElement {
     public static class Node{
         int data;
         Node next;
@@ -29,8 +29,18 @@ public class RemoveFirst {
             this.size++;
         }
 
+        void addFirst(int val){
+            Node node = new Node(val);
+            if(this.size() == 0) this.head = this.tail = node;
+            else{
+                node.next = this.head;
+                this.head = node;
+            }
+            this.size++;
+        }
+
         void display(){
-            if(this.size() == 0){
+            if(this.head == null){
                 System.out.println("Empty");
                 return;
             }
@@ -41,22 +51,8 @@ public class RemoveFirst {
             }
             System.out.println();
         }
-
-        void removeFirst(){
-            if(this.size() == 0){
-                System.out.println("Empty");
-                return;
-            }
-            if(this.size() == 1) head = tail = null;
-            else{
-                Node tmp = this.head.next;
-                this.head.next = null;
-                this.head = tmp;       
-            }
-
-            this.size--;
-        }
     }
+
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
 
@@ -67,19 +63,12 @@ public class RemoveFirst {
         list.addLast(50);
 
         list.display();
-        System.out.println(list.size());
-        
-        list.removeFirst();
-        list.removeFirst();
-        list.removeFirst();
-        
-        System.out.println(list.size());
-        list.display();
-        
-        list.removeFirst();
-        list.removeFirst();
-        list.removeFirst();
+
+        list.addFirst(90);
+        list.addFirst(80);
+        list.addFirst(70);
+        list.addFirst(60);
 
         list.display();
-    }    
+    }
 }
