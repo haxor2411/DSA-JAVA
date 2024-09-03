@@ -71,6 +71,22 @@ public class RemoveElement {
             }
             this.size--;
         }
+
+        void removeAt(int idx){
+            if(idx < 0 || idx >= this.size()) return;
+            if(idx == 0) removeFirst();
+            else if(idx == this.size() - 1) removeLast();
+            else{
+                Node tmp = this.head;
+                for(int i = 0; i < idx - 1; i++) tmp = tmp.next;
+
+                Node nbr = tmp.next;
+                tmp.next = nbr.next;
+                nbr.next = null;
+
+                this.size--;
+            }
+        }
     }
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
@@ -115,5 +131,22 @@ public class RemoveElement {
         list.removeLast();
         list.removeLast();
         list.removeLast();
+
+        list.display();
+
+        list.addLast(100);
+        list.addLast(200);
+        list.addLast(300);
+        list.addLast(400);
+        list.addLast(500);
+
+        list.display();
+        
+        list.removeAt(0);
+        list.display();
+        list.removeAt(list.size() - 1);
+        list.display();
+        list.removeAt(1);
+        list.display();
     }    
 }
