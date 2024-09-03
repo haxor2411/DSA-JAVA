@@ -49,9 +49,8 @@ public class AddElement {
                 Node tmp = this.head;
                 for(int i = 0; i < idx - 1; i++) tmp = tmp.next;
 
-                Node tmpAddr = tmp.next;
+                node.next = tmp.next;
                 tmp.next = node;
-                node.next = tmpAddr;
                 this.size++;
             }
 
