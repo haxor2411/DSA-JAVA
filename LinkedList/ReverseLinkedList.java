@@ -65,7 +65,7 @@ public class ReverseLinkedList {
         }
 
 
-        //Data Recursive : O(n)
+        //Data Recursive : O(n) : Total Operation : 2n
         static Node left;
         void reverseDR(){
             left = this.head;
