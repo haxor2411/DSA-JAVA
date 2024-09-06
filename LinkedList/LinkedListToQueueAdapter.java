@@ -2,6 +2,7 @@ package LinkedList;
 
 import java.util.LinkedList;
 
+// Combination of addLast, removeFirst, getFirst
 public class LinkedListToQueueAdapter {
     public static class Queue{
         LinkedList<Integer> list;
