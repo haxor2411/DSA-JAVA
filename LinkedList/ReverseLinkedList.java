@@ -76,7 +76,7 @@ public class ReverseLinkedList {
             if(node == null) return;
             reverseDRHelper(node.next, idx + 1);
 
-            if(idx > this.size() / 2){
+            if(idx >= this.size() / 2){
                 Node right = node;
                 int tmp = right.data;
                 right.data = left.data;
