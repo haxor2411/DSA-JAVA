@@ -57,7 +57,11 @@ public class RemoveDuplicatesinSorted {
 
             Node curr = this.head;
             while(curr.next != null){
-                if(curr.data == curr.next.data) curr.next = curr.next.next;
+                if(curr.data == curr.next.data) {
+                    Node tmp = curr.next.next;
+                    curr.next.next = null;
+                    curr.next = tmp;
+                }
                 else curr = curr.next;
             }
         }
