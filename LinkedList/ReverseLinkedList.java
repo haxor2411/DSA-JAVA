@@ -63,6 +63,28 @@ public class ReverseLinkedList {
             for(int i = 0; i < idx; i++) tmp = tmp.next;
             return tmp;
         }
+
+
+        //Data Recursive : O(n)
+        static Node left;
+        void reverseDR(){
+            left = this.head;
+            reverseDRHelper(head, 0);
+        }
+
+        void reverseDRHelper(Node node, int idx){
+            if(node == null) return;
+            reverseDRHelper(node.next, idx + 1);
+
+            if(idx > this.size() / 2){
+                Node right = node;
+                int tmp = right.data;
+                right.data = left.data;
+                left.data = tmp;
+
+                left = left.next;
+            }
+        }
     }
     
     public static void main(String[] args) {
@@ -76,7 +98,8 @@ public class ReverseLinkedList {
 
         list.display();
 
-        list.reverseDI();
+        // list.reverseDI();
+        list.reverseDR();
 
         list.display();
     }
