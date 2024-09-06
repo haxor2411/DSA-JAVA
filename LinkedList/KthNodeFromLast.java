@@ -41,6 +41,7 @@ public class KthNodeFromLast {
         }
 
         int kthNode(int idx){
+            if(idx < 0 || idx >= this.size()) return -1;
             Node curr = this.head, fwd = this.head;
 
             for(int i = 0; i < idx; i++) fwd = fwd.next;
