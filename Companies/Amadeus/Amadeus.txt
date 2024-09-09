@@ -1,0 +1,34 @@
+1 -> Implement stack using linkedlist.##
+2 -> SHL and technical mcqs, coding questions were easy ##
+3 -> They asked DBMS basic query and Basic array questions and questions on resume. ## 
+4 -> Previous experience, why Amadeus, what did I know about Amadeus / travel industry ##
+5 -> Where do you see yourself in 5 years ##
+6 -> How much experience do you have with CASE interviews
+7 -> Make sure to solve some puzzles from GFG as they also asked for puzzles and only selected applicants who could solve them.
+8 -> Which sorting algorithm is the fastest in term of TC ?
+9 -> First round Buy and Sell Stocks 1 (Leetcode) Longest Contiguous Subsequence ##
+10 -> What is code coverage ?
+11 -> Smart pointer implementation specially shared pointer
+12 -> tower of hanoi convert binary tree to doubly linked list
+13 -> Technical interview with hackerrank code-pair where linked list reversal was asked
+14 -> Convert a non-negative integer num to its English words representation.
+15 -> length of the smallest subarray with positive sum
+16 -> How do you separate even and odd numbers from an array with minimum operations.
+17 -> Some candles burnt problems
+18 -> Asked me if the bottle is a class or object and then to write a code for it
+19 ->  Program to check armstrong number Puzzle of Three ants on triangle vertices and we have to find probability that there is no collision
+20 -> what is sorting and merge sort in details. some puzzles questions like candle question.
+21 -> Why in java multiple inheritance is not possible?
+22 -> To create a binary tree from scratch, add values to it and then to traverse the tree using inorder traversal.
+23 -> Tell us about the SDLC process.
+
+
+Maximum Mismatch problem: You are given a string S of length N. You can select and reverse any substring of S of any length. You are allowed to perform this operation many numbers of times. Determine the maximum number of mismatches by performing the operation.
+
+Mismatch(S) is defined as the number of corresponding positions where characters are different in S and reverse(S). For example : S = abab, reverse(S) = baba. A number of mismatches = 4. S= abca. A number of mismatches = 2.
+
+The Longest Prime Sub-array: Given an array arr[] of N integers, the task is to find the longest sub-array where all numbers in that sub-array are prime.
+
+https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/
+
+In order to pass all the test cases, you should have the knowledge of the sieve of Eratosthenes.
