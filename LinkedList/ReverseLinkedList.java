@@ -85,6 +85,23 @@ public class ReverseLinkedList {
                 left = left.next;
             }
         }
+
+
+        void reversePointerRecursive(){
+            helperPR(this.head);
+            Node tmp = this.head;
+            this.head = this.tail;
+            this.tail = tmp;
+            
+            this.tail.next = null;
+        }
+
+        void helperPR(Node node){
+            if(node == null) return;
+            
+            helperPR(node.next);
+            if(node != this.tail) node.next.next = node;
+        }
     }
     
     public static void main(String[] args) {
@@ -99,7 +116,8 @@ public class ReverseLinkedList {
         list.display();
 
         // list.reverseDI();
-        list.reverseDR();
+        // list.reverseDR();
+        list.reversePointerRecursive();
 
         list.display();
     }
