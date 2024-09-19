@@ -39,6 +39,27 @@ public class Palindrome {
             }
             System.out.println();
         }
+
+        static Node left;
+        static int flag;
+        boolean palindrome(){
+            flag = 0;
+            left = this.head;
+            helper(this.head, 0);
+            return (flag == 0) ? true : false;
+        }
+
+        void helper(Node node, int idx){
+            if(node == null) return;
+
+            helper(node.next, idx + 1);
+
+            Node right = node;
+            if(idx > this.size() / 2){
+                if(left.data != right.data) flag += 1;
+                left = left.next;
+            }
+        }
     }
 
     public static void main(String[] args) {
@@ -48,8 +69,10 @@ public class Palindrome {
         list.addLast(20);
         list.addLast(30);
         list.addLast(40);
-        list.addLast(50);
-        list.addLast(60);
-        list.addLast(70);
+        list.addLast(30);
+        list.addLast(20);
+        list.addLast(10);
+
+        System.out.println(list.palindrome());
     }
 }
