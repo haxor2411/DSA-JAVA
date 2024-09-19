@@ -41,24 +41,29 @@ public class Palindrome {
         }
 
         static Node left;
-        static int flag;
         boolean palindrome(){
-            flag = 0;
             left = this.head;
-            helper(this.head, 0);
-            return (flag == 0) ? true : false;
+            boolean res = helper(this.head, 0);
+            return res;
         }
 
-        void helper(Node node, int idx){
-            if(node == null) return;
+        boolean helper(Node node, int idx){
+            if(node == null) return true;
 
-            helper(node.next, idx + 1);
+            boolean res = helper(node.next, idx + 1);
 
-            Node right = node;
-            if(idx > this.size() / 2){
-                if(left.data != right.data) flag += 1;
-                left = left.next;
+            if(res){
+                Node right = node;
+                if(idx > this.size() / 2){
+                    if(left.data != right.data) return false;
+                    else{
+                        left = left.next;
+                        return true;
+                    }
+                }
             }
+
+            return res;
         }
     }
 
@@ -66,7 +71,7 @@ public class Palindrome {
         LinkedList list = new LinkedList();
         
         list.addLast(10);
-        list.addLast(20);
+        list.addLast(50);
         list.addLast(30);
         list.addLast(40);
         list.addLast(30);
