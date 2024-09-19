@@ -61,6 +61,7 @@ public class Kreverse {
             LinkedList ans = new LinkedList();
 
             while(this.size() != 0){
+                // if grouping : removeFirst + addFirst
                 if(this.size() >= k){
                     for(int i = 0; i < k; i++){
                         int tmp = this.getFirst();
@@ -89,6 +90,19 @@ public class Kreverse {
             this.tail = ans.tail;
             this.size = ans.size;
         }
+
+
+        void displayReverse(){
+            helper(this.head);
+            System.out.println();
+        }
+
+        void helper(Node node){
+            if(node == null) return;
+
+            helper(node.next);
+            System.out.print(node.data + " ");
+        }
     }    
 
     public static void main(String[] args) {
@@ -107,6 +121,7 @@ public class Kreverse {
         list.addLast(11);
 
         list.display();
+        list.displayReverse();
 
         list.kReverse(3);
 
