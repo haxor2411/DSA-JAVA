@@ -49,7 +49,7 @@ public class Height {
         }
 
         int height(TreeNode node){
-            int ht = -1; // for nodes || for edges ht = 0;
+            int ht = -1; // for edges || for nodes ht = 0;
 
             for(TreeNode child : node.children) ht = Math.max(ht, height(child));
 
