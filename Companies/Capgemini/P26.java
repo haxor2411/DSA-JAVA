@@ -44,6 +44,8 @@ public class P26 {
 
         long result = countLuckyStrings(n);
         System.out.println("Number of lucky strings of length " + n + " : " + result);
+
+        scanner.close();
     }
 }
 
