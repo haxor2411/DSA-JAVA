@@ -51,6 +51,11 @@ public class ConnectedComponents {
         }
     }
 
+    //This  func can be used to check if the fraph is fully connected or every vertex can be reached from each vertex;
+    static boolean isGrapgConnected(ArrayList<Edge>[] graph){
+        return getComponent(graph).size() == 1;
+    }
+
     @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -76,6 +81,8 @@ public class ConnectedComponents {
         display(graph);
 
         System.out.println(getComponent(graph));
+
+        System.out.println(isGrapgConnected(graph));
     }
 }
 
